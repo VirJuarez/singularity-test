@@ -34,7 +34,7 @@ function Header(){
                 </button>
 
                 {/* Menú para desktop */}
-                <nav className="hidden md:flex space-x-6">
+                <nav className="hidden md:flex space-x-9">
                     <Link to="/location" onClick={handleNavigation} className="hover:text-gray-200">Location</Link>
                     <Link to="/blog" onClick={handleNavigation} className="hover:text-gray-200">Blog</Link>
                     <Link to="/services" onClick={handleNavigation} className="hover:text-gray-200">Services</Link>
@@ -45,7 +45,7 @@ function Header(){
 
             {/* Menú móvil desplegable */}
             {isMenuOpen && (
-                <nav className="md:hidden pt-4 pb-2">
+                <nav className="md:hidden pt-4 pb-2 ">
                     <div className="flex flex-col space-y-3">
                         <Link to="/location" onClick={handleNavigation} className="hover:text-gray-200">Location</Link>
                         <Link to="/blog" onClick={handleNavigation} className="hover:text-gray-200">Blog</Link>

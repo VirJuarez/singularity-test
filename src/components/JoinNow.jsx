@@ -4,7 +4,7 @@ function JoinNow(){
     return (
         <div className=" text-white py-12 px-8">
           <div className="max-w-6xl mx-auto border border-white rounded-3xl p-8 flex gap-8 bg-blue-500 ">
-            <div className="w-1/2">
+            <div className="w-1/2 hidden md:block">
                 <img src="./dog2-yellowcircle.png" className="w-full"/>
             </div>
             <div>

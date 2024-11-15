@@ -4,11 +4,11 @@ import CustomText from './auxiliars/CustomText';
 
 function HowItWorks() {
   return (
-    <section className="h-screen grid grid-cols-2">
-      <div className="relative grid grid-cols-1 gap-0 w-full max-w-xl m-auto">
+    <section className="h-screen grid grid-cols-1 md:grid-cols-2">
+      <div className="relative grid grid-cols-3 md:grid-cols-1 gap-3 md:gap-0  w-full max-w-xl m-auto">
         {/* SVG for curved dashed lines */}
         <svg
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full hidden md:block"
           viewBox="0 0 400 400"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

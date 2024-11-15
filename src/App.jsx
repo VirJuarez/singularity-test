@@ -17,7 +17,7 @@ function Layout({ children }) {
   const location = useLocation();
   const isLoginPage = location.pathname === '/login';
   const is404Page = location.pathname !== '/login' && 
-    !['/login', '/home', '/blog', '/franchise', '/location', '/services', '/about'].includes(location.pathname);
+    !['/login', '/', '/blog', '/franchise', '/location', '/services', '/about'].includes(location.pathname);
 
   return (
     <div className="min-h-screen w-full bg-cover bg-start bg-no-repeat" 
@@ -38,7 +38,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/home" element={
+          <Route path="/" element={
             <ProtectedRoute>
               <Home />
             </ProtectedRoute>

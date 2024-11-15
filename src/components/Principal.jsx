@@ -1,8 +1,8 @@
 function Principal(){
     return (
-        <div className="relative min-h-[600px] md:h-[700px] bg-cover bg-center" >
+        <div className="relative min-h-screen md:h-[700px] bg-cover bg-center" >
           <div className="absolute inset-0  grid grid-cols-1 md:grid-cols-2">
-            <div className="text-white flex flex-col justify-center gap-9 items-center md:items-start px-1 md:mx-28 py-10 md:py-0">
+            <div className="text-white flex flex-col justify-start mdjustify-center gap-9 items-center md:items-start px-1 md:mx-28 py-10 md:py-0">
               <h2 className="text-4xl md:text-7xl font-extrabold font-comfortaa text-center md:text-left">We Get Pet Care!</h2>
               <p className="text-lg md:text-2xl mb-8 text-center md:text-start">
                 For over 17 Years, Fetch! Pet Care has been a trusted partner in keeping pets healthy and happy!

@@ -5,7 +5,7 @@ import { sub } from "framer-motion/client";
 
 function FlexibleComponent({title, subtitle}){
     return (
-        <section className="min-h-screen py-8 md:py-16 flex flex-col items-start md:grid md:grid-cols-2 gap-8 bg-transparent">
+        <section className="min-h-screen max-w-screen py-8 md:py-16 flex flex-col items-start md:grid md:grid-cols-2 gap-8 bg-transparent">
           <div className="container flex flex-col items-start justify-center px-4 md:px-[7.5rem] ">
             <CustomText title={title} subtitle={subtitle} text="Enter Your Location and Fetch Our Services" />
             <CustomInput placeholder="Zip Code" />
