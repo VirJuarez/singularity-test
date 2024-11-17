@@ -17,7 +17,7 @@ function Login() {
     useEffect(() => {
         const token = localStorage.getItem('token');
         if (token) {
-            navigate('/home');
+            navigate('/');
         }
     }, [navigate]);
 
@@ -43,7 +43,7 @@ function Login() {
                 // Guardar el token en localStorage
                 localStorage.setItem('token', data.token);
                 // Redireccionar a home
-                navigate('/home');
+                navigate('/');
             } else {
                 setLoginError('Credenciales inválidas');
             }

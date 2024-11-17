@@ -9,10 +9,10 @@ function Header(){
     };
 
     return (
-        <header className="z-1 text-white py-4 px-8 font-open-sans font-normal text-[24px] leading-[33px]">
+        <header className="z-1 text-white py-4 px-8 font-open-sans font-normal text-[24px] leading-[33px] bg-orange-600">
             <div className="z-1 flex justify-between items-center mx-2 md:mx-10">
               <div className='bg-white rounded-full p-2  w-20 h-20 flex items-center justify-center'>
-                <Link to="/home">
+                <Link to="/">
                     <img src="/petlogo.svg" alt="Fetch! Pet Care" className="w-11 h-14 " />
                 </Link>
                 </div>

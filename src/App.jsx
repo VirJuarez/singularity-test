@@ -22,7 +22,7 @@ function Layout({ children }) {
   return (
     <div className="min-h-screen w-full bg-cover bg-start bg-no-repeat" 
          style={{ 
-           backgroundImage: `url(${isLoginPage ? "/login-bg.svg" : "/bg.png"})`,
+           backgroundImage: `url(${isLoginPage ? "/login-bg.svg" : ""})`,
            minHeight: '100vh'
          }}>
       {!isLoginPage && !is404Page && <Header />}

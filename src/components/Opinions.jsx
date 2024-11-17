@@ -42,7 +42,7 @@ export default function Opinions() {
   }
 
   return (
-    <div className="w-full min-h-screen max-w-8xl mx-auto px-2 sm:px-4 py-6 sm:py-12 relative">
+    <div className="w-full min-h-[70vh] max-w-8xl my-1 px-2 sm:px-4 py-2 sm:py-12 relative overflow-hidden">
       <h2 className="text-xl sm:text-2xl md:text-5xl font-bold mb-6 sm:mb-12 md:mb-24 text-orange-600 text-center px-4 sm:px-8 md:px-[29rem]">
         Here's what pet owners have to say about Fetch! Pet Care...
       </h2>
@@ -84,7 +84,7 @@ export default function Opinions() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/3 md:top1/2 md:translate-y-1/2  right-4 sm:right-10 md:right-40 z-30 bg-orange-600 hover:bg-orange-800 text-white rounded-full p-1 sm:p-2 focus:outline-none"
+        className="absolute top-1/3 md:top-1/2 md:translate-y-1/2  right-4 sm:right-10 md:right-40 z-30 bg-orange-600 hover:bg-orange-800 text-white rounded-full p-1 sm:p-2 focus:outline-none"
         aria-label="Next testimonial"
       >
         <ArrowRight className="w-6 h-6 sm:w-8 sm:h-8" />
