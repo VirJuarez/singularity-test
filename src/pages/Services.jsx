@@ -1,8 +1,8 @@
 import FlexibleComponent from "../components/FlexibleComponent";
-function Services(){
+function Services() {
     return (
         <div>
-            <FlexibleComponent title="Our Services" subtitle="National Brand With a Local Feel. Experience the Fetch! Difference"/>
+            <FlexibleComponent title="Our Services" subtitle="National Brand With a Local Feel. Experience the Fetch! Difference" />
         </div>
     )
 }

@@ -3,14 +3,14 @@ import Box from "./auxiliars/Box";
 import CustomText from "./auxiliars/CustomText";
 import { sub } from "framer-motion/client";
 
-function FlexibleComponent({title, subtitle}){
+function FlexibleComponent({ title, subtitle }) {
   return (
     <section className="relative max-w-screen min-h-screen my-8">
       {/* SVG Background Container */}
       <div className="absolute inset-0 -z-10 w-full h-full">
-        <svg 
-          className="absolute top-40 left-0 w-screen h-full "
-          viewBox="0 0 1440 700" 
+        <svg
+          className="absolute top-40 left-0 w-full h-full "
+          viewBox="0 0 1440 700"
           preserveAspectRatio="xMinYMin slice"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -22,23 +22,23 @@ function FlexibleComponent({title, subtitle}){
 
       {/* Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div className="container flex flex-col items-start justify-center px-4 md:px-[7.5rem] relative z-10">
-        <CustomText title={title} subtitle={subtitle} text="Enter Your Location and Fetch Our Services" />
-        <CustomInput placeholder="Zip Code" />
-      </div>
-      <div className="container flex items-center justify-center w-full gap-9 relative z-10">
-        <div className="flex flex-col gap-9">
-          <Box text="Dog Walking" image="/dog.svg" />
-          <Box text="Overnight Care" image="/overnight.svg" />
+        <div className="container flex flex-col items-start justify-center px-4 md:px-[7.5rem] relative z-10">
+          <CustomText title={title} subtitle={subtitle} text="Enter Your Location and Fetch Our Services" />
+          <CustomInput placeholder="Zip Code" />
         </div>
-        <div className="flex flex-col gap-9">
-          <Box text="Pet Sitting" image="/petsitting.svg" />
-          <Box text="Other Services" image="/otherservices.svg" />
+        <div className="container flex items-center justify-center w-full gap-9 relative z-10">
+          <div className="flex flex-col gap-9">
+            <Box text="Dog Walking" image="/dog.svg" />
+            <Box text="Overnight Care" image="/overnight.svg" />
+          </div>
+          <div className="flex flex-col gap-9">
+            <Box text="Pet Sitting" image="/petsitting.svg" />
+            <Box text="Other Services" image="/otherservices.svg" />
+          </div>
         </div>
-      </div>
       </div>
     </section>
-);
+  );
 }
 
 export default FlexibleComponent;

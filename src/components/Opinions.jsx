@@ -9,7 +9,8 @@ const testimonials = [
     name: "Kenned Dsouza",
     image: "./person1.jpg",
     quote: "I like that I got to meet the dog Walker who is walking my dog daily and consult with her. I also appreciate the daily communication I get about the dog and how my dog is doing",
-    color: "bg-red-500"  },
+    color: "bg-red-500"
+  },
   {
     id: 2,
     name: "Laura Dsouza",
@@ -54,17 +55,17 @@ export default function Opinions() {
             <div
               key={testimonial.id}
               className={`rounded-3xl p-4 sm:p-10 absolute w-full max-w-2xl transition-all duration-500 ease-in-out
-                ${offset === 0 ? 'z-20 opacity-100 scale-100 bg-blue-500' : 
-                  offset === 1 || offset === testimonials.length - 1 ? 'z-10 opacity-100 scale-75 bg-orange-600' : 
-                  'opacity-0 scale-65'}
-                ${offset === 1 ? 'translate-x-[35%] sm:translate-x-[55%]' : 
+                ${offset === 0 ? 'z-20 opacity-100 scale-100 bg-blue-500' :
+                  offset === 1 || offset === testimonials.length - 1 ? 'z-10 opacity-100 scale-75 bg-orange-600' :
+                    'opacity-0 scale-65'}
+                ${offset === 1 ? 'translate-x-[35%] sm:translate-x-[55%]' :
                   offset === testimonials.length - 1 ? '-translate-x-[35%] sm:-translate-x-[55%]' : ''}`}
             >
               <div className="flex flex-col items-center text-center gap-2 sm:gap-4">
                 <div className="w-16 h-16 sm:w-28 sm:h-28 rounded-full border-4 border-white overflow-hidden">
-                {testimonial.image? 
-                  <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
-                  : <UserRound fill="#ffffff"className="w-full h-full object-cover bg-white" />}
+                  {testimonial.image ?
+                    <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+                    : <UserRound fill="#ffffff" className="w-full h-full object-cover bg-white" />}
                 </div>
                 <h3 className="text-base sm:text-lg md:text-3xl text-white">{testimonial.name}</h3>
                 <p className="text-sm sm:text-md md:text-2xl text-white/90 leading-relaxed font-open-sans opacity-80">

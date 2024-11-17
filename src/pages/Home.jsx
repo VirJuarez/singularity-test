@@ -6,16 +6,16 @@ import JoinNow from "../components/JoinNow";
 import Background from "../components/Background";
 
 
-function Home(){
+function Home() {
 
 
     return (
         <div>
-            <Principal/>
-            <FlexibleComponent title="Our Services" subtitle="National Brand With a Local Feel. Experience the Fetch! Difference"/>
-            <Opinions/>
-            <HowItWorks/>
-            <JoinNow/>
+            <Principal />
+            <FlexibleComponent title="Our Services" subtitle="National Brand With a Local Feel. Experience the Fetch! Difference" />
+            <Opinions />
+            <HowItWorks />
+            <JoinNow />
         </div>
     );
 }

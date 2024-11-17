@@ -1,9 +1,9 @@
 import FlexibleComponent from "../components/FlexibleComponent";
 
-function Blog(){
+function Blog() {
     return (
         <div>
-            <FlexibleComponent title="Blog Section" subtitle="Visit our Pet Care Blog"/>
+            <FlexibleComponent title="Blog Section" subtitle="Visit our Pet Care Blog" />
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import FlexibleComponent from "../components/FlexibleComponent";
 
-function Franchise(){
+function Franchise() {
     return (
         <div>
-            <FlexibleComponent title="Franchise Section" subtitle="Become a Fetch! Franchise Owner"/>
+            <FlexibleComponent title="Franchise Section" subtitle="Become a Fetch! Franchise Owner" />
         </div>
     )
 }

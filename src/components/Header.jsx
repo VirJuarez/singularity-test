@@ -4,6 +4,14 @@ import { useState } from 'react';
 function Header(){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const menuItems = [
+        { path: '/location', text: 'Location' },
+        { path: '/blog', text: 'Blog' },
+        { path: '/services', text: 'Services' },
+        { path: '/about', text: 'About Us' },
+        { path: '/franchise', text: 'Franchise with Us' }
+    ];
+
     const handleNavigation = () => {
         setIsMenuOpen(false);
     };
@@ -35,11 +43,16 @@ function Header(){
 
                 {/* Menú para desktop */}
                 <nav className="hidden md:flex space-x-9">
-                    <Link to="/location" onClick={handleNavigation} className="hover:text-gray-200">Location</Link>
-                    <Link to="/blog" onClick={handleNavigation} className="hover:text-gray-200">Blog</Link>
-                    <Link to="/services" onClick={handleNavigation} className="hover:text-gray-200">Services</Link>
-                    <Link to="/about" onClick={handleNavigation} className="hover:text-gray-200">About Us</Link>
-                    <Link to="/franchise" onClick={handleNavigation} className="hover:text-gray-200">Franchise with Us</Link>
+                    {menuItems.map((item) => (
+                        <Link 
+                            key={item.path}
+                            to={item.path} 
+                            onClick={handleNavigation} 
+                            className="hover:text-gray-200"
+                        >
+                            {item.text}
+                        </Link>
+                    ))}
                 </nav>
             </div>
 
@@ -47,11 +60,16 @@ function Header(){
             {isMenuOpen && (
                 <nav className="md:hidden pt-4 pb-2 ">
                     <div className="flex flex-col space-y-3">
-                        <Link to="/location" onClick={handleNavigation} className="hover:text-gray-200">Location</Link>
-                        <Link to="/blog" onClick={handleNavigation} className="hover:text-gray-200">Blog</Link>
-                        <Link to="/services" onClick={handleNavigation} className="hover:text-gray-200">Services</Link>
-                        <Link to="/about" onClick={handleNavigation} className="hover:text-gray-200">About Us</Link>
-                        <Link to="/franchise" onClick={handleNavigation} className="hover:text-gray-200">Franchise with Us</Link>
+                        {menuItems.map((item) => (
+                            <Link 
+                                key={item.path}
+                                to={item.path} 
+                                onClick={handleNavigation} 
+                                className="hover:text-gray-200"
+                            >
+                                {item.text}
+                            </Link>
+                        ))}
                     </div>
                 </nav>
             )}

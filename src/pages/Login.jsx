@@ -96,17 +96,17 @@ function Login() {
     };
 
     const isFormValid = () => {
-        return formData.email && 
-               formData.password && 
-               !errors.email && 
-               !errors.password;
+        return formData.email &&
+            formData.password &&
+            !errors.email &&
+            !errors.password;
     };
 
     return (
         <div className="h-screen w-full lg:overflow-hidden lg:grid lg:grid-cols-2 font-open-sans bg-white lg:bg-transparent">
             {/* Logo */}
             <div className="lg:bg-white bg-orange-200 rounded-full flex items-center justify-center w-60 h-60 md:w-[23rem] md:h-[23rem] mx-auto my-8 lg:m-auto">
-                <img src="/petlogo.svg" alt="Fetch! Pet Care" className="md:w-52 md:h-60 h-40"/>
+                <img src="/petlogo.svg" alt="Fetch! Pet Care" className="md:w-52 md:h-60 h-40" />
             </div>
 
             {/* Contenido del formulario */}
@@ -114,12 +114,12 @@ function Login() {
                 <div className="w-full px-8 lg:w-2/3 lg:p-8">
                     <h2 className="text-2xl font-bold mb-11 border-l-8 border-orange-500 pl-8">BIENVENIDO</h2>
                     <form onSubmit={handleSubmit} >
-                    {loginError && (
-                    <p className="text-red-500 text-sm text-center">{loginError}</p>
-                )}
-                        <input 
+                        {loginError && (
+                            <p className="text-red-500 text-sm text-center">{loginError}</p>
+                        )}
+                        <input
                             type="email"
-                            name="email" 
+                            name="email"
                             placeholder="EMAIL"
                             value={formData.email}
                             onChange={handleChange}
@@ -130,9 +130,9 @@ function Login() {
                             <p className="text-red-500 text-sm ">{errors.email}</p>
                         )}
 
-                        <input 
+                        <input
                             type="password"
-                            name="password" 
+                            name="password"
                             placeholder="CONTRASEÑA"
                             value={formData.password}
                             onChange={handleChange}
@@ -146,11 +146,11 @@ function Login() {
                         <div className="text-right mb-12 mt-9 -mr-4">
                             <a href="#" className="text-sm text-zinc-400">¿Olvidaste tu contraseña?</a>
                         </div>
-                        <button 
-                        type="submit"
+                        <button
+                            type="submit"
                             className={`block w-fit mx-auto px-11 py-6 rounded-full font-bold text-xl
-                                ${isFormValid() 
-                                    ? 'bg-[#4487FF] text-white cursor-pointer' 
+                                ${isFormValid()
+                                    ? 'bg-[#4487FF] text-white cursor-pointer'
                                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
                             disabled={!isFormValid() || isLoading}
                         >
