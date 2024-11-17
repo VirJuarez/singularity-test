@@ -8,7 +8,6 @@ import Services from './pages/Services';
 import AboutUs from './pages/AboutUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Background from './components/Background';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
 

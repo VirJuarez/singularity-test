@@ -1,7 +1,7 @@
 import CustomInput from "./auxiliars/CustomInput";
 import Box from "./auxiliars/Box";
 import CustomText from "./auxiliars/CustomText";
-import { sub } from "framer-motion/client";
+
 
 function FlexibleComponent({ title, subtitle }) {
   return (
