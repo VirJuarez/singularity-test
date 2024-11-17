@@ -1,8 +1,74 @@
-# React + Vite
+# Challenge Frontend - Singularity Health
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo en vivo
+[Ver demo en Vercel](https://singularity-test.vercel.app/)
 
-Currently, two official plugins are available:
+## Descripción
+Aplicación web desarrollada como challenge técnico para Singularity Health. Consiste en un sistema de autenticación con protección de rutas y diseño de home y secciones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
+- React 18
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Fetch API
+- LocalStorage para persistencia del token
+
+## Instalación y Configuración
+
+### Prerrequisitos
+- Node.js (versión 16 o superior)
+- npm 
+
+### Pasos para instalación
+1. Clonar el repositorio
+
+```bash
+   git clone https://github.com/VirJuarez/singularity-test.git
+   cd singularity-test
+   ```
+
+2. Instalar dependencias
+
+```bash
+   npm install
+   ```
+3.**Iniciar el Servidor de Desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+   La aplicación estará disponible en `http://localhost:5173`
+
+
+## Características
+
+### Sistema de Autenticación
+- **Credenciales de prueba:**
+  - Email: eve.holt@reqres.in
+  - Contraseña: cualquier combinación de 6 o más caracteres
+- La autenticación se realiza contra la API de ReqRes
+- Validaciones implementadas:
+  - Email válido
+  - Contraseña con mínimo 6 caracteres
+  - Mensajes de error personalizados
+
+### Protección de Rutas
+- Usuarios no autenticados son redirigidos a /login
+- Usuarios autenticados son redirigidos a /home al intentar acceder a /login. Se valida la presencia del token en el localStorage
+- Redirección a página 404 para rutas no existentes
+
+
+### Home
+**Nota:** El home completo fue desarrollado como extra, aunque no era un requerimiento de la prueba:
+- Diseño completo implementado
+- Links y botones son actualmente decorativos
+- Pendiente: Optimización del responsive design
+
+## Mejoras Futuras
+- Implementar funcionalidad completa en botones y enlaces del dashboard
+- Optimizar diseño responsive
+- Implementar sistema de logout
+
+## Contacto
+[Email](virginia.juarez1996@gmail.com)
