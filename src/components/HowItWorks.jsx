@@ -44,15 +44,15 @@ function HowItWorks() {
         </svg>
 
         {/* Boxes */}
-        <div className="flex justify-start z-10">
+        <div className="flex justify-center md:justify-start z-10">
           <Box text="Reserve" image="/reserve.svg" />
         </div>
         
-        <div className="flex justify-end z-10">
+        <div className="flex justify-center md:justify-end z-10">
           <Box text="Match" image="/match.svg" />
         </div>
         
-        <div className="flex justify-start z-10">
+        <div className="flex justify-center md:justify-start z-10">
           <Box text="Relax" image="/relax.svg" />
         </div>
       </div>

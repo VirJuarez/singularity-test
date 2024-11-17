@@ -43,7 +43,7 @@ export default function Opinions() {
 
   return (
     <div className="w-full min-h-[70vh] max-w-8xl my-1 px-2 sm:px-4 py-2 sm:py-12 relative overflow-hidden">
-      <h2 className="text-xl sm:text-2xl md:text-5xl font-bold mb-6 sm:mb-12 md:mb-24 text-orange-600 text-center px-4 sm:px-8 md:px-[29rem]">
+      <h2 className="text-xl sm:text-2xl md:text-5xl font-bold mb-6 sm:mb-12 md:mb-24 text-orange-600 text-center px-4 sm:px-8 xl:px-[29rem]">
         Here's what pet owners have to say about Fetch! Pet Care...
       </h2>
       <div className="flex items-center justify-center h-[300px] sm:h-[400px]">
