@@ -13,6 +13,12 @@ Aplicación web desarrollada como challenge técnico para Singularity Health. Co
 - React Router DOM
 - Fetch API
 - LocalStorage para persistencia del token
+- Herramientas de generación SVG para fondos:
+  - [Haikei App](https://app.haikei.app/)
+  - [SVG Wave](https://svgwave.in/)
+
+## Diseño
+El desarrollo frontend se basó en el diseño proporcionado en [Adobe XD](https://xd.adobe.com/view/9485d763-06d4-472b-a01c-e154229970a9-c1d6/). Los fondos con patrones ondulados y formas orgánicas fueron creados utilizando generadores de SVG online para intentarreplicar la estética del diseño original.
 
 ## Instalación y Configuración
 
@@ -34,6 +40,7 @@ Aplicación web desarrollada como challenge técnico para Singularity Health. Co
    npm install
    ```
 3.**Iniciar el Servidor de Desarrollo**
+
    ```bash
    npm run dev
    ```
