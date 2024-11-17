@@ -13,6 +13,7 @@ function Login() {
     });
 
     const [loginError, setLoginError] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -24,6 +25,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoginError('');
+        setIsLoading(true);
 
         try {
             const response = await fetch('https://reqres.in/api/login', {
@@ -40,15 +42,15 @@ function Login() {
             const data = await response.json();
 
             if (response.ok && data.token) {
-                // Guardar el token en localStorage
                 localStorage.setItem('token', data.token);
-                // Redireccionar a home
                 navigate('/');
             } else {
                 setLoginError('Credenciales inválidas');
             }
         } catch (error) {
             setLoginError('Error al intentar iniciar sesión');
+        } finally {
+            setIsLoading(false);
         }
     };
     const handleChange = (e) => {
@@ -150,9 +152,9 @@ function Login() {
                                 ${isFormValid() 
                                     ? 'bg-[#4487FF] text-white cursor-pointer' 
                                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
-                            disabled={!isFormValid()}
+                            disabled={!isFormValid() || isLoading}
                         >
-                            INICIAR SESIÓN
+                            {isLoading ? 'CARGANDO...' : 'INICIAR SESIÓN'}
                         </button>
                         <div className="text-center text-sm text-zinc-400 mt-8">
                             AÚN NO TENGO CUENTA? <a href="#" className="text-[#015F91]">REGISTRARSE</a>
